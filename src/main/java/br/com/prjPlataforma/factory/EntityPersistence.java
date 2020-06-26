@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class EntityPersistence {
-	private static final String nomePersistence = "ProjetoSitePet";
+	private static final String nomePersistence = "PrjPlataforma";
 	private static EntityManagerFactory entityManagerFactory = null;
 	//Método estatico passa aqui
 	static {

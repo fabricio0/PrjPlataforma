@@ -47,8 +47,12 @@ table {
 img {
   max-width: 100%; }
 
-
-
+@font-face {
+  font-family: "GothamLight";
+  src: url("../font/GothamLightRegular.otf") format("opentype"); }
+@font-face {
+  font-family: "GothamBold";
+  src: url("../font/GothamBold.otf") format("opentype"); }
 @font-face {
   font-family: "BaskervvilleItalico";
   src: url("../font/Baskervville-Italic.otf") format("opentype"); }
@@ -74,6 +78,12 @@ img {
   font-family: "PlayfairDisplayItalico";
   src: url("../font/PlayfairDisplay-Italic.ttf") format("truetype"); }
 @font-face {
+  font-family: "GothamLight";
+  src: url("../font/GothamLightRegular.otf") format("opentype"); }
+@font-face {
+  font-family: "GothamBold";
+  src: url("../font/GothamBold.otf") format("opentype"); }
+@font-face {
   font-family: "BaskervvilleItalico";
   src: url("../font/Baskervville-Italic.otf") format("opentype"); }
 @font-face {
@@ -95,7 +105,7 @@ body {
 
 .container .logo {
   height: 700px;
-  background-image: url("../img/sd.jpg");
+  background-image: url(../img/sd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -205,7 +215,8 @@ body {
         display: block;
         transition-delay: 2s; }
     .accordionHome div div.divFlex div {
-      background-color: #5682d8;
+      background-color: #ff9700;
+      color: #fff;
       display: flex;
       justify-content: space-between;
       box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15); }
@@ -308,9 +319,9 @@ body {
         display: block;
         font-size: 1.25em; }
       .accordionHome .formContent div.divId button {
-        background-color: #0053e9;
-        border: 2px solid tomato;
-        color: tomato;
+        background-color: #ff9700;
+        border: 1px solid tomato;
+        color: #fff;
         text-transform: uppercase;
         font-weight: bold;
         height: 40px;
@@ -318,9 +329,9 @@ body {
         margin: 30px auto 50px auto; }
         .accordionHome .formContent div.divId button:hover {
           cursor: pointer;
-          background-color: tomato;
-          color: #0053e9;
-          border: 2px solid #0053e9;
+          background-color: rgba(0, 0, 0, 0);
+          color: #ff9700;
+          border: 1px solid #ff9700;
           transition: 0.2s linear; }
 
 .main h2.tituloSection {

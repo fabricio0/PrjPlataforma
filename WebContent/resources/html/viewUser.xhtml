@@ -16,12 +16,12 @@
 	<div class="container">
 		<section class="logo home">
 		<div class="navLayout">
-			<p:link outcome="../index.xhtml"><img src="../img/logoPET.png" alt="Logo do PET ADS IFSP São Carlos" /></p:link>
+			<h1><p:link outcome="../index.xhtml" style="font-weight:bold;"> DEVTODEV </p:link></h1>
 			<div data-menu="data-menu">
 				<nav>
 				<ul>
 					<li data-href="#Sobre">Sobre</li>
-					<li data-href="#Noticia">Noticias</li>
+					<li data-href="#Noticia">Depoimento</li>
 					<li data-href="#Numeros">Pet em números</li>
 					<li>Contato</li>
 
@@ -41,9 +41,9 @@
 						<span class="spanId"></span>
 					</div>
 					<ul data-listaAccordion="data-listaAccordion">
-						<li><p:link outcome="mainUser" value="Nóticia"></p:link></li>
+						<li><p:link outcome="mainUser" value="Depoimento"></p:link></li>
        				    <li><p:link outcome="mainUser" value="Usuário"></p:link></li>
-            			<li><p:link outcome="mainUser" value="Atividades"></p:link></li>
+            			<li><p:link outcome="mainUser" value="Curso"></p:link></li>
 					</ul>
 				</div>
 				<div class="divFlex">
@@ -52,9 +52,9 @@
 						<span class="spanId"></span>
 					</div>
 					<ul data-listaAccordion="data-listaAccordion">
-						<li>Nóticia</li>
+						<li>Depoimento</li>
 						<li>Usuário</li>
-						<li>Atividades</li>
+						<li>Curso</li>
 					</ul>
 				</div>
 				<div class="divFlex">
@@ -63,9 +63,9 @@
 						<span class="spanId"></span>
 					</div>
 					<ul data-listaAccordion="data-listaAccordion">
-						<li><p:link outcome="updateUser" value="Nóticia"></p:link></li>
+						<li><p:link outcome="updateUser" value="Depoimento"></p:link></li>
        				    <li><p:link outcome="updateUser" value="Usuário"></p:link></li>
-            			<li><p:link outcome="updateUser" value="Atividades"></p:link></li>
+            			<li><p:link outcome="updateUser" value="Curso"></p:link></li>
 					</ul>
 				</div>
 				<div class="divFlex">
@@ -74,9 +74,9 @@
 						<span class="spanId"></span>
 					</div>
 					<ul data-listaAccordion="data-listaAccordion" class="ativo">
-						<li data-accordionInsert="data-accordionInsert">Nóticia</li>
+						<li data-accordionInsert="data-accordionInsert">Depoimento</li>
 						<li data-accordionInsert="data-accordionInsert">Usuário</li>
-						<li data-accordionInsert="data-accordionInsert">Atividades</li>
+						<li data-accordionInsert="data-accordionInsert">Curso</li>
 					</ul>
 				</div>
 			</div>
@@ -84,7 +84,7 @@
 			<div class="formContent">
 				<div class="divId ativo tabela" data-contentLeft="data-contentLeft">
 				
-				 <h1>Notícias</h1>
+				 <h1>Depoimentos</h1>
 					<p:dataTable var="noticia" value="#{beanView.noticias}" rows="5"
                  			paginator="true"
                				  paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} "
@@ -122,7 +122,7 @@
 					</h:dataTable>
 				</div>
 				<div class="divId tabela" data-contentLeft="data-contentLeft">
-					 <h1>Atividades</h1>
+					 <h1>Cursos</h1>
 					<h:dataTable value="#{beanView.atividades}" var="atividade" class="data-scroll">
 
 						<h:column>
