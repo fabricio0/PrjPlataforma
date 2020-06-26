@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd" >
+<h:html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+<h:head id="j_idt410">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET São Carlos - SP</title>
+   <link rel="stylesheet" href="css/style.css" />
+</h:head>
+
+<h:body>
+	<div class="container">
+    <section class="logo">
+      <div class="navLayout">
+        <h1><a href="">DEVTODEV</a> </h1>
+        <div data-menu="data-menu">
+          <nav>
+            <ul>
+              <li data-href="#Sobre">Sobre</li>
+              <li data-href="#Noticia">Depoimentos</li>
+              <li data-href="#Numeros">Dev em números</li>
+              <li>Contato</li>
+              <h:form rendered="#{benLogin.autoriza('USUARIONAOLOGADO')}">
+						<li data-modal="data-modal">Entrar</li>
+					</h:form>
+					<h:form rendered="#{benLogin.autoriza('USUARIOLOGADO')}">
+						<li><p:link outcome="html/mainUser" value="Painel"></p:link>
+						</li>
+					</h:form>
+					<h:form rendered="#{benLogin.autoriza('USUARIOLOGADO')}">
+						<li><h:commandLink action="#{benLogin.logout}" value="Sair" />
+						</li>
+					</h:form>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p data-anima-letters="data-anima-letters">
+
+      </p>
+      <span data-href="#Sobre">↓</span>
+
+
+    </section>
+    <main class="main">
+      <h2 class="tituloSection">Cursos</h2>
+
+      <section class="pilares">
+        <div class="pilar-1">
+          <h:graphicImage library="img" name="php-code.png" />
+          <h1>HTML - Básico</h1>
+          <h2>PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World .</h2>
+          <h3>Saiba mais &gt;</h3>
+        </div>
+        <div class="pilar-2">
+      	  <h:graphicImage library="img" name="html.png" />
+            <h1>JavaScript</h1>
+            <h2>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</h2>
+            <h3> Saiba mais &gt;</h3>
+        </div>
+        <div class="pilar-3">
+            <h:graphicImage library="img" name="code.png" />
+            <h1>CSS1 - Básico</h1>
+            <h2>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.tags ou ficar contido dentro das tags. </h2>
+            <h3>Saiba mais &gt;</h3>
+        </div>
+      </section>
+
+
+      <section class="notice data-scroll" data-anima-scroll="data-anima-scroll" id="Noticia">
+        <h2 class="data-scroll" data-anima-scroll="data-anima-scroll">Depoimentos</h2>
+        <ul class="data-scroll" data-anima-scroll="data-anima-scroll">
+          <li>Depoimento 1</li>
+          <li>Depoimento 2</li>
+          <li>Depoimento 3</li>
+          <li>Depoimento 4</li>
+          <li>Clique aqui para ler todas os Depoimentos</li>
+        </ul>
+      </section>
+
+      <section class="numbers data-scroll" data-anima-scroll="data-anima-scroll" data-anima-numeros="data-anima-numeros" id="Numeros">
+        <h2>A plataforma</h2>
+        <div class="baseNumberFlex">
+          <div>
+            <span class="numberEstilo" data-number="data-number">1</span>
+            <span class="description">Tutor(es)</span>
+          </div>
+          <div>
+            <span class="numberEstilo" data-number="data-number">310</span>
+            <span class="description">Alunos</span>
+          </div>
+          <div>
+            <span class="numberEstilo" data-number="data-number">12</span>
+            <span class="description">Anos de Existência</span>
+          </div>
+          <div>
+            <span class="numberEstilo" data-number="data-number">350</span>
+            <span class="description">Projetos Realizados</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="integrantes">
+        <h2>Mentores e Administradores da plataforma</h2>
+        <div class="bgImgLegend">
+          <ul class="overflowImg">
+           <li>
+					<h:graphicImage name="petimg.jpg" library="img" class="mut" />		
+				</li>
+				<li>
+					<h:graphicImage name="petBg.jpg" library="img" data-img="data-img" />		
+				</li>
+				<li>
+					<h:graphicImage name="petimg.jpg" library="img" data-img="data-img" />		
+				</li>
+				<li>
+					<h:graphicImage name="petBg.jpg" library="img" data-img="data-img" />		
+				</li>
+				<li>
+					<h:graphicImage name="petimg.jpg" library="img" class="mut" />		
+				</li>
+				<li>
+					<h:graphicImage name="petBg.jpg" library="img" data-img="data-img" />		
+				</li>
+				<li>
+					<h:graphicImage name="petimg.jpg" library="img" data-img="data-img" />		
+				</li>
+				<li>
+					<h:graphicImage name="petBg.jpg" library="img" data-img="data-img" />		
+				</li>
+          </ul>
+          <div class="descricaoIntergrante">
+            <div data-contexto="data-contexto">
+              <h3>FBCJR</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi accusantium veritatis iste neque
+                quaerat tenetur corrupti ratione quo nisi, est officiis quam necessitatibus aut sunt voluptas eligendi
+                at et eaque.</p>
+            </div>
+            <div data-contexto="data-contexto">
+              <h3>Campos</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nemo maxime! Eum nemo illo, dolore
+                aspernatur odit sapiente quidem laudantium repellat expedita ratione reprehenderit dignissimos dolorum
+                corrupti atque qui cumque.</p>
+            </div>
+            <div data-contexto="data-contexto">
+              <h3>Jr</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium dicta doloribus assumenda,
+                molestiae dolorum ipsa eum! Corporis, dolores culpa. Tempora odio cupiditate ullam possimus! Accusantium
+                neque veritatis consequuntur commodi!</p>
+            </div>
+            <div data-contexto="data-contexto">
+              <h3>FJC</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium dicta doloribus assumenda,
+                molestiae dolorum ipsa eum! Corporis, dolores culpa. Tempora odio cupiditate ullam possimus! Accusantium
+                neque veritatis consequuntur commodi!</p>
+            </div>
+            <div data-contexto="data-contexto">
+              <h3>FJR</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium dicta doloribus assumenda,
+                molestiae dolorum ipsa eum! Corporis, dolores culpa. Tempora odio cupiditate ullam possimus! Accusantium
+                neque veritatis consequuntur commodi!</p>
+            </div>
+            <div data-contexto="data-contexto">
+              <h3>CPS</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium dicta doloribus assumenda,
+                molestiae dolorum ipsa eum! Corporis, dolores culpa. Tempora odio cupiditate ullam possimus! Accusantium
+                neque veritatis consequuntur commodi!</p>
+            </div>
+
+            
+          </div>
+        </div>
+      </section>
+      <h2 class="tituloSection" style="margin-top: 0px;">Inscreva-se</h2>
+      <section class="pilares">
+      
+        <div class="pilar-1">
+          <h1>HTML - Básico</h1>
+          <h2>PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World .</h2>
+          <h3>Grátis &gt;</h3>
+        </div>
+        <div class="pilar-2">
+            <h1>JavaScript</h1>
+            <h2>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.</h2>
+            <h3> Grátis &gt;</h3>
+        </div>
+        <div class="pilar-3">
+            <h1>CSS1 - Básico</h1>
+            <h2>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags.tags ou ficar contido dentro das tags. </h2>
+            <h3>Grátis &gt;</h3>
+        </div>
+      </section>
+      <footer class="footer">
+        <p>Dev to Dev © 2020. Alguns direitos Reservados.</p>
+      </footer>
+    </main>
+
+  </div>
+	<div class="ModalUsuario" id="Entrar">
+		<h:form prependId="false">
+			<p:growl id="growls" life="3000" />
+			<button class="fechar" type="button" data-btnFechar="data-btnFechar">X</button>
+			<h3>Login</h3>
+			<label id="lbEmail" for="email">Nome do usuário</label>
+			<p:inputText id="email" value="#{benLogin.usuario.email}" />
+
+			<label id="lbSenha" for="senha">Senha</label>
+			<p:password id="nonFeedback" value="#{benLogin.usuario.senha}" />
+			<p:commandButton ajax="false" id="salvarButton" action="#{benLogin.logar}"
+				update="growls" value="Entrar" />
+		</h:form>
+		
+		
+	</div>
+	<h:outputScript name="script.js" library="js" />
+</h:body>
+
+</h:html>
