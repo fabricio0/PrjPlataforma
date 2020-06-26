@@ -6,7 +6,7 @@ if (body) {
 
 let animaLetras = document.querySelector('.js [data-anima-letters]');
 if (animaLetras && body) {
-  const conteudo = " “ BEM VINDO(A) AO PET ADS IFSP SÂO CARLOS ” ";
+  const conteudo = " “ CURSOS DE WEB DESIGN, UX/UI, DESIGN, HTML, CSS E JAVASCRIPT ” ";
   const vtConteudo = conteudo.split('') ;
   let textoAnimado = '';
   vtConteudo.forEach((elemento,index) => {

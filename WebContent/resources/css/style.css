@@ -132,7 +132,9 @@ body {
       cursor: pointer;
       margin: 20px 0;
       margin-left: 20px;
-      padding: 5px; }
+      padding: 5px;
+      margin-top: 0;
+      padding-top: 30px; }
       .container .logo .navLayout h1 a {
         color: #fff;
         text-decoration: none;
@@ -195,7 +197,7 @@ body {
       color: #ff9700; }
 
 .accordionHome {
-  height: 1200px;
+  height: 1500px;
   font-family: "GothamLight";
   font-size: 1.25em;
   font-weight: bold;
@@ -214,6 +216,12 @@ body {
         animation: blink 2s forwards;
         display: block;
         transition-delay: 2s; }
+        .accordionHome div div.divFlex ul.ativo li {
+          color: #564f74; }
+          .accordionHome div div.divFlex ul.ativo li a.ui-widget {
+            text-decoration: none;
+            font-weight: normal;
+            color: #564f74 !important; }
     .accordionHome div div.divFlex div {
       background-color: #ff9700;
       color: #fff;
@@ -236,8 +244,7 @@ body {
         background-color: palegreen !important; }
   .accordionHome .formContent {
     margin: 0 auto;
-    width: 800px;
-    height: 900px; }
+    width: 800px; }
     .accordionHome .formContent div.divId {
       box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
       text-align: center;
@@ -245,9 +252,19 @@ body {
       .accordionHome .formContent div.divId.divId.ativo {
         display: block;
         animation: 1s animaup forwards; }
+        .accordionHome .formContent div.divId.divId.ativo h1 {
+          font-family: "GothamLight";
+          font-size: 1.75rem;
+          cursor: pointer;
+          margin: 60px 0;
+          padding: 5px;
+          letter-spacing: .1em;
+          cursor: none;
+          margin: 0;
+          color: #fff; }
       .accordionHome .formContent div.divId.tabela {
         margin-bottom: 50px;
-        color: #595e67; }
+        color: #fff; }
         .accordionHome .formContent div.divId.tabela tbody .radios {
           width: 960;
           margin: 0 auto;
@@ -273,8 +290,6 @@ body {
           width: 960px;
           font-size: 1.25em;
           line-height: 1.5em; }
-        .accordionHome .formContent div.divId.tabela tbody tr:nth-child(even) {
-          color: #eaedf2; }
       .accordionHome .formContent div.divId .accordionHome .formContent div.tabela tbody table, .accordionHome .formContent div.divId .accordionHome .formContent div.tabela tbody h1 {
         border-spacing: 0px;
         max-width: 960;
@@ -282,32 +297,22 @@ body {
         text-align: center; }
       .accordionHome .formContent div.divId .accordionHome .formContent div.tabela tbody th {
         font-size: 1.3em;
-        font-weight: bold;
         width: 202px; }
       .accordionHome .formContent div.divId .accordionHome .formContent div.tabela tbody tr td {
+        color: #fff;
         font-size: 1em;
         padding-top: 10px;
         padding-bottom: 10px; }
-      .accordionHome .formContent div.divId .accordionHome .formContent div.tabela tbody tr:nth-child(even) {
-        background-color: #595e67;
-        color: #eaedf2; }
-      .accordionHome .formContent div.divId h1 {
-        font-family: "GothamLight";
-        font-size: 1.75em;
-        cursor: pointer;
-        margin: 60px 0;
-        padding: 5px;
-        letter-spacing: .1em;
-        font-size: 2em; }
       .accordionHome .formContent div.divId label.labelId {
         display: block;
         font-family: "GothamLight";
-        font-size: 1.75em;
+        font-size: 1.75rem;
         cursor: pointer;
         margin: 60px 0;
         padding: 5px;
         letter-spacing: .1em;
-        font-size: 1em; }
+        font-size: 1em;
+        color: #fff; }
       .accordionHome .formContent div.divId input {
         display: block;
         margin: 0 auto;
@@ -333,10 +338,12 @@ body {
           color: #ff9700;
           border: 1px solid #ff9700;
           transition: 0.2s linear; }
+        .accordionHome .formContent div.divId button.btnAtivo {
+          width: 150px; }
 
 .main h2.tituloSection {
   font-family: "GothamLight";
-  font-size: 1.75em;
+  font-size: 1.75rem;
   cursor: pointer;
   margin: 60px 0;
   padding: 5px;
@@ -356,7 +363,7 @@ body {
   margin: 0 auto; }
   .main .definition h2 {
     font-family: "GothamLight";
-    font-size: 1.75em;
+    font-size: 1.75rem;
     cursor: pointer;
     margin: 60px 0;
     padding: 5px;
@@ -422,7 +429,7 @@ body {
   height: 600px; }
   .main .notice h2 {
     font-family: "GothamLight";
-    font-size: 1.75em;
+    font-size: 1.75rem;
     cursor: pointer;
     margin: 60px 0;
     padding: 5px;
@@ -465,7 +472,7 @@ body {
   margin: 0 auto; }
   .main .numbers h2 {
     font-family: "GothamLight";
-    font-size: 1.75em;
+    font-size: 1.75rem;
     cursor: pointer;
     margin: 60px 0;
     padding: 5px;
@@ -513,7 +520,7 @@ body {
   height: 500px; }
   .main .integrantes h2 {
     font-family: "GothamLight";
-    font-size: 1.75em;
+    font-size: 1.75rem;
     cursor: pointer;
     margin: 60px 0;
     padding: 5px;
@@ -614,7 +621,7 @@ body {
       color: #fff; }
     .ModalUsuario form h3 {
       font-family: "GothamLight";
-      font-size: 1.75em;
+      font-size: 1.75rem;
       cursor: pointer;
       margin: 60px 0;
       padding: 5px;
@@ -727,11 +734,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -760,7 +762,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -805,11 +807,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -838,7 +835,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -868,11 +865,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -901,7 +893,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -931,11 +923,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -964,7 +951,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -994,11 +981,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -1027,7 +1009,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -1042,11 +1024,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -1075,7 +1052,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
@@ -1090,11 +1067,6 @@ body {
   .container .navLayout {
     display: block !important;
     height: 0; }
-    .container .navLayout img {
-      padding-top: 20px;
-      margin-left: 30px;
-      height: 100px !important;
-      width: 100px !important; }
     .container .navLayout [data-menu]::before {
       position: absolute;
       top: 40px;
@@ -1123,7 +1095,7 @@ body {
       display: block; }
   .container nav ul {
     display: block !important;
-    background: linear-gradient(135deg, #19aff7, #1adad0);
+    background: radial-gradient(circle at top center, #564f74 0, #2f2a40 100%);
     height: 100vh; }
     .container nav ul li::after {
       content: "";
