@@ -57,7 +57,7 @@ public class BeanLogin {
 	public String logout() {
 		FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
 		usuario = null;
-		addMessage("Saiu com sucesso !");
+		addMessage("Saiu ;( !");
 		return "/resources/index.xhtml";
 	}
 

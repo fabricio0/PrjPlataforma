@@ -22,9 +22,13 @@
 				<ul>
 					<li data-href="#Sobre">Sobre</li>
 					<li data-href="#Noticia">Depoimento</li>
-					<li data-href="#Numeros">Pet em números</li>
+					<li data-href="#Numeros">Dev em números</li>
 					<li>Contato</li>
-
+					<h:form rendered="#{benLogin.autoriza('USUARIOLOGADO')}">
+            		  <li>
+          			    <h:commandLink action="#{benLogin.logout}" value="Sair" />
+          			    </li>
+          			    </h:form>
 				</ul>
 				</nav>
 			</div>
