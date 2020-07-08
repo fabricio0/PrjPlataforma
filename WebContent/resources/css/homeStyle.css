@@ -1,0 +1,213 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+@font-face {
+  font-family: "BaskervvilleItalico";
+  src: url("../font/Baskervville-Italic.otf") format("opentype"); }
+@font-face {
+  font-family: "Baskervvilleregular";
+  src: url("../font/Baskervville-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "PlayfairDisplayItalico";
+  src: url("../font/PlayfairDisplay-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: "BaskervvilleItalico";
+  src: url("../font/Baskervville-Italic.otf") format("opentype"); }
+@font-face {
+  font-family: "Baskervvilleregular";
+  src: url("../font/Baskervville-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "PlayfairDisplayItalico";
+  src: url("../font/PlayfairDisplay-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: "BaskervvilleItalico";
+  src: url("../font/Baskervville-Italic.otf") format("opentype"); }
+@font-face {
+  font-family: "Baskervvilleregular";
+  src: url("../font/Baskervville-Regular.otf") format("opentype"); }
+@font-face {
+  font-family: "PlayfairDisplayItalico";
+  src: url("../font/PlayfairDisplay-Italic.ttf") format("truetype"); }
+img {
+  max-width: 100%;
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(135deg, #19AFF7, #1ADAD0);
+  -webkit-font-smoothing: antialiased; }
+
+.container .logo {
+  height: 500px;
+  background-image: url(../img/petBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 calc((100% - 1200px) / 2);
+  -moz-font-features-settings: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  -ms-font-features-settings: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  -o-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
+  .container .logo.home {
+    background-image: none;
+    height: 120px; }
+  .container .logo .navLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .container .logo .navLayout img {
+      display: block;
+      height: 60px;
+      width: 60px; }
+    .container .logo .navLayout h1 {
+      font-family: "Baskervvilleregular";
+      font-size: 3em;
+      cursor: pointer;
+      margin: 20px 0;
+      margin-left: 20px;
+      padding: 5px;
+      font-feature-settings: "smcp" 1;
+      -webkit-font-feature-settings: "smcp" 1;
+      -moz-font-feature-settings: "smcp" 1;
+      -ms-font-feature-settings: "smcp" 1; }
+    .container .logo .navLayout nav ul {
+      margin: 20px 0;
+      display: flex; }
+      .container .logo .navLayout nav ul li {
+        font-family: "Baskervvilleregular";
+        font-size: 1.25em;
+        padding: 20px;
+        font-feature-settings: "smcp" 1;
+        -webkit-font-feature-settings: "smcp" 1;
+        -moz-font-feature-settings: "smcp" 1;
+        -ms-font-feature-settings: "smcp" 1;
+        color: #4A4C4D;
+        transition: color .3s ease-out; }
+        .container .logo .navLayout nav ul li:hover {
+          cursor: pointer;
+          color: #0088E9; }
+        .container .logo .navLayout nav ul li:last-child {
+          margin-right: 20px; }
+      .container .logo .navLayout nav ul li + li {
+        margin-left: 20px; }
+  .container .logo p {
+    margin-top: 0px;
+    text-align: center;
+    font-family: "BaskervvilleItalico", serif;
+    font-size: 1.75em;
+    line-height: 1.5em;
+    color: #fff;
+    height: 50px;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 130px; }
+    .container .logo p::after {
+      content: '|';
+      opacity: 1;
+      margin-left: 10px;
+      display: inline-block;
+      -webkit-animation: blink .7s infinite;
+      animation: blink .7s infinite; }
+  .container .logo span {
+    color: tomato !important;
+    font-size: 2em;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: #0053E9;
+    text-align: center;
+    border: 2px solid tomato;
+    animation: arrowUp .5s ease-in 0s infinite alternate;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+    margin-top: 100px !important;
+    height: 50px;
+    width: 50px;
+    display: block; }
+    .container .logo span:hover {
+      background-color: #0088E9; }
+
+.accordionHome {
+  height: calc(100vh - 120px);
+  font-family: "Baskervvilleregular";
+  font-size: 1.25em;
+  padding: 20px;
+  font-feature-settings: "smcp" 1;
+  -webkit-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings: "smcp" 1;
+  -ms-font-feature-settings: "smcp" 1;
+  padding: 0 calc((100% - 1200px) / 2); }
+  .accordionHome div {
+    max-width: 200px; }
+    .accordionHome div div {
+      background-color: #a8cabd;
+      display: flex;
+      justify-content: space-between; }
+      .accordionHome div div h1 {
+        line-height: 1.5em;
+        cursor: pointer;
+        padding-left: 10px; }
+      .accordionHome div div span {
+        margin-top: 10px;
+        margin-right: 20px;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        background-color: red; }
+    .accordionHome div ul {
+      padding-left: 30px;
+      line-height: 2em; }
+
+/*# sourceMappingURL=homeStyle.css.map */

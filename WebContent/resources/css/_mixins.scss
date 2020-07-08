@@ -1,0 +1,71 @@
+@import '_variaveis';
+
+@mixin logo {
+  font-family: $fontLogo;
+  color: #fff;
+  font-size: 1.75em;
+  letter-spacing: -.2em;
+  cursor: pointer;
+  margin: 20px 0;
+  margin-left: 20px;
+  padding: 5px;
+}
+@mixin titulo {
+  font-family: $fontNav;
+  font-size: 1.75rem;
+  cursor: pointer;
+  margin: 60px 0;
+  padding: 5px;
+  letter-spacing: .1em;
+}
+@mixin tituloCurso {
+  font-family: $fontLogo;
+  font-size: 1em;
+}
+@mixin paragrafoCurso {
+  font-family: $fontNav;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+@mixin separadores {
+        content: '';
+        display: block;
+        margin: 15px auto 0 auto;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+}
+@mixin navegacao {
+  font-family: $fontNav;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 20px;
+}
+@mixin comentario {
+    margin-top: 0px;
+    text-align: center; 
+    font-family: $fontNav, sans-serif;
+    font-size: 1.75em;
+    line-height: 1.5em;
+}
+@mixin targetItalicoGeneral {
+    margin-top: 0px;
+    text-align: center;
+    font-family: $fontCometario, serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+@mixin dialogDefinitionGeneral {
+      max-width: 650px;
+      margin: 0 auto;
+      @include targetItalicoGeneral;
+      padding: 30px 40px;
+      border-radius: 7px;
+      border: 1px solid #6D8997;
+      box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+}
+@mixin descricaoNumber {
+  font-family: $fontLogo;
+  font-size: 1.25em;
+}
